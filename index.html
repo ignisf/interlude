@@ -94,16 +94,18 @@
       </section>
 
       {{#eventCount}}
-        {{> agenda_template}}
+        <section>
+          {{> agenda_template}}
+
+          {{#nextEvent}}
+            {{> next_lecture_template}}
+          {{/nextEvent}}
+
+          {{#nextEvent.lecturer}}
+            {{> next_lecturer_template}}
+          {{/nextEvent.lecturer}}
+        </section>
       {{/eventCount}}
-
-      {{#nextEvent}}
-        {{> next_lecture_template}}
-      {{/nextEvent}}
-
-      {{#nextEvent.lecturer}}
-        {{> next_lecturer_template}}
-      {{/nextEvent.lecturer}}
 
       <section>
         <h1>#PlovdivConf</h1>
