@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="679.98798"
+   height="679.98798"
+   id="svg5734"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     id="namedview36"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.22425739"
+     inkscape:cx="-165.28175"
+     inkscape:cy="153.80692"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5734" />
+  <title
+     id="title6393">PlovdivConf Logo</title>
+  <defs
+     id="defs5736">
+    <color-profile
+       xlink:href="/usr/share/color/icc/colord/AdobeRGB1998.icc"
+       name="Compatible-with-Adobe-RGB--1998-"
+       id="color-profile5742" />
+    <clipPath
+       id="clipPath3298">
+      <path
+         d="m 0,858.897 612.288,0 L 612.288,0 0,0 0,858.897 z"
+         id="path3300"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata5739">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>PlovdivConf Logo</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-32.053254,-186.18711)">
+    <path
+       d="m 780,586.64789 a 300,300 0 1 1 -600,0 300,300 0 1 1 600,0 z"
+       transform="matrix(1.1333133,0,0,1.1333133,-171.94314,-138.67476)"
+       id="path5744"
+       style="fill:#19834b;fill-opacity:1;stroke-width:0.08823685;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -665.71426,323.79074 a 371.42857,371.42857 0 1 1 -742.85714,0 371.42857,371.42857 0 1 1 742.85714,0 z"
+       transform="matrix(0.88451868,0,0,0.88451868,1289.4194,239.78213)"
+       id="path6397"
+       style="fill:#eda138;fill-opacity:1;stroke-width:0.11305584;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -705.71431,183.79076 a 185.71429,185.71429 0 1 1 -371.42859,0 185.71429,185.71429 0 1 1 371.42859,0 z"
+       transform="matrix(1.6896628,0,0,1.6896628,1878.261,215.63669)"
+       id="path6401"
+       style="fill:#19834b;fill-opacity:1;stroke-width:0.05918341;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -380,315.21933 a 274.28571,274.28571 0 1 1 -548.57141,0 274.28571,274.28571 0 1 1 548.57141,0 z"
+       transform="matrix(0.8246219,0,0,0.8246219,911.58556,266.24433)"
+       id="path6403"
+       style="fill:#eda138;fill-opacity:1;stroke-width:0.1212677;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="translate(-787.95273,503.53317)"
+       id="hills"
+       style="fill:#19834b;fill-opacity:1;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <title
+         id="title6391">Hills</title>
+      <path
+         d="m 1054.4091,4.511685 c 23.4625,-26.13875 44.3688,-49.9375 65.84,-73.21375 18.6588,-20.22375 44.8113,-20.83875 64.4113,-1.94375 25.02,24.10875 49.8512,48.42 74.7612,72.64875 -0.565,0.8325 -1.1275,1.67125 -1.6925,2.50875 l -203.32,0 z"
+         id="hill2"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6363">Hill 2</title>
+      </path>
+      <path
+         d="m 1067.0103,37.178935 c -10.4887,13.03625 -19.9762,25.3175 -30.1012,37.05375 -2.2113,2.5675 -6.6301,4.44125 -10.0813,4.51875 -18.285,0.41375 -36.575,0.18375 -54.87125,0.05375 -1.38125,-0.01 -2.75375,-0.97875 -5.84,-2.15625 4.045,-4.3875 7.2825,-7.915 10.5275,-11.43 10.81,-11.76 21.27375,-23.865 32.51245,-35.20375 16.6525,-16.79875 29.7988,-17.10875 47.8925,-1.9875 2.9663,2.4825 5.7113,5.2325 9.9613,9.15125"
+         id="hill4"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6367">Hill 4</title>
+      </path>
+      <path
+         d="m 1295.1036,96.01681 -166.3363,0 c 13.9175,-19.77 26.7976,-38.5625 40.2663,-56.91625 4.7413,-6.46625 9.945,-13.56 16.6387,-17.425 16.7338,-9.6625 32.1288,-7.62 45.9051,6.385 21.2462,21.605 41.4524,44.2325 63.5262,67.95625"
+         id="hill6"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6371">Hill 6</title>
+      </path>
+      <path
+         d="m 1156.5172,46.88356 c -11.665,16.02625 -22.5287,31.23 -33.7863,46.145 -1.6762,2.22625 -5.1287,4.38125 -7.7849,4.4025 -28.3163,0.32125 -56.6438,0.2025 -84.9613,0.2025 -0.4287,-1.41 -0.8537,-2.825 -1.2837,-4.22875 18.5825,-22.42875 35.9962,-45.955 56.1262,-66.89 14.9363,-15.54625 33.8375,-13.75 51.6588,1.07125 6.58,5.47125 12.39,11.88375 20.0312,19.2975"
+         id="hill5"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6369">Hill 5</title>
+      </path>
+      <path
+         d="m 1111.6576,-67.85894 c -15.4375,16.95625 -30.3625,33.4825 -45.5125,49.8025 -1.665,1.785 -4.5825,3.3525 -6.9512,3.39125 -17.1513,0.2875 -34.305,0.1575 -54.1138,0.1575 5.0462,-5.4325 8.58,-9.1175 11.9863,-12.91125 12.2437,-13.66375 24.1212,-27.66875 36.7487,-40.9675 17.2988,-18.225 40.13,-18.33375 57.8425,0.5275"
+         id="hill1"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6361">Hill 1</title>
+      </path>
+      <path
+         d="m 1196.4891,-67.504815 c 15.5575,16.8475 36.1763,33.27 51.44,49.48 1.6775,1.775 4.6063,3.32125 6.975,3.3425 17.145,0.16375 28.725,-0.0875 48.535,-0.22875 -5.0862,-5.39375 -8.6462,-9.05125 -12.0762,-12.82375 -12.3413,-13.57625 -24.3163,-27.495 -37.0313,-40.70625 -17.43,-18.105 -40.26,-18.05 -57.8425,0.93625"
+         id="hill3"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6365">Hill 3</title>
+      </path>
+      <path
+         d="m 1253.1334,40.12331 c 10.4913,13.0425 19.8312,22.3725 29.9562,34.10875 2.2101,2.56875 6.6313,4.4425 10.08,4.51875 18.2863,0.41375 36.5763,0.185 54.8726,0.05375 1.3825,-0.01 2.7537,-0.97875 5.8412,-2.155 -4.0463,-4.3875 -7.285,-7.915 -10.53,-11.43125 -10.81,-11.75875 -21.2725,-23.865 -32.5125,-35.20375 -16.6525,-16.7975 -29.7987,-17.1075 -47.8912,-1.9875 -2.9675,2.48375 -8.0238,8.7875 -9.8163,12.09625"
+         id="hill7"
+         style="fill:#19834b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0">
+        <title
+           id="title6373">Hill 7</title>
+      </path>
+    </g>
+    <path
+       d="m 246.30542,369.50504 a 105.59114,105.59114 0 1 1 -211.182282,0 105.59114,105.59114 0 1 1 211.182282,0 z"
+       transform="matrix(2.2820379,0,0,2.2820379,50.931923,-317.0434)"
+       id="path6530"
+       style="fill:none;stroke:none"
+       inkscape:connector-curvature="0" />
+    <text
+       transform="matrix(-0.90278536,-0.43009137,0.43009137,-0.90278536,480.44259,1161.6142)"
+       id="text6556"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-1.80000007px;word-spacing:0px;fill:#eda138;fill-opacity:1;stroke:none;font-family:Back In The USSR DL;-inkscape-font-specification:Back In The USSR DL"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path6530"
+         id="textPath6560"
+         style="font-size:78px;letter-spacing:-1.80000007px;fill:#eda138;fill-opacity:1">PLOVDIV CONF</textPath></text>
+    <text
+       transform="matrix(-0.30657075,0.95184786,-0.95184786,-0.30657075,986.77285,334.49)"
+       id="text6570"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:4.74000168px;word-spacing:0px;fill:#eda138;fill-opacity:1;stroke:none;font-family:Back In The USSR DL;-inkscape-font-specification:Back In The USSR DL"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path6577"
+         id="textPath6579"
+         style="font-size:78px;letter-spacing:4.74000168px;fill:#eda138;fill-opacity:1">2014</textPath></text>
+    <path
+       d="m 246.30542,369.50504 a 105.59114,105.59114 0 1 1 -211.182282,0 105.59114,105.59114 0 1 1 211.182282,0 z"
+       transform="matrix(2.8292625,0,0,-2.8292625,-25.950433,1573.4098)"
+       id="path6577"
+       style="fill:none;stroke:none"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>The IT Tour</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/night.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700&subset=latin,cyrillic">
+    <link rel="stylesheet" type="text/css" href="background.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/lang/bg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ractive.js/0.3.7/ractive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="schedule.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      </div>
+    </div>
+
+    <video id="background_video" src="cropped-background.mp4" loop autoplay />
+
+    <script id="agenda_template" type="text/ractive">
+      <section id="agenda">
+        <table class="reveal">
+          <thead>
+            <tr>
+              <th>
+                Час
+              </th>
+              <th>
+                Лекция
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#agenda}}
+            <tr>
+              <td>{{startTime.format('HH:mm')}}</td>
+              <td>{{title}}</td>
+            </tr>
+            {{/agenda}}
+          </tbody>
+        </table>
+      </section>
+    </script>
+
+    <script id="next_lecture_template" type="text/reactive">
+      <section id="next-lecture">
+        <h3>Следва</h3>
+        <h1>{{event.title}}</h1>
+        <p>{{event.description}}</p>
+        <h4>({{event.startTime.fromNow()}})</h4>
+      </section>
+    </script>
+
+    <script id="next_lecturer_template" type="text/reactive">
+      <section id="next-lecturer">
+        <h3>Лектор</h3>
+        <h1>{{event.lecturer.name}}</h1>
+        <p>{{event.lecturer.description}}</p>
+      </section>
+    </script>
+
+    <script id="slides_template" type="text/ractive">
+      <section data-state="update-safe">
+        <img src="logo.svg">
+      </section>
+
+      {{#agenda.length}}
+        {{> agenda_template}}
+      {{/agenda.length}}
+
+      {{#event}}
+        {{> next_lecture_template}}
+      {{/event}}
+
+      {{#event.lecturer}}
+        {{> next_lecturer_template}}
+      {{/event.lecturer}}
+
+      <section>
+        <h1>#PlovdivConf</h1>
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=%23PlovdivConf"  data-widget-id="466029214940925952">Tweets about "#PlovdivConf"</a>
+        <script src="https://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+      </section>
+    </script>
+
+    <script type="text/javascript" src="reactive-init.js"></script>
+    <script type="text/javascript" src="reveal-init.js"></script>
+  </body>
+</html>
