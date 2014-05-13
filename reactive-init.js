@@ -7,9 +7,15 @@ var reactive = new Ractive({
     template: '#slides_template',
 
     // Here, we're passing in some initial data
-    data: {event: schedule.nextEvent(), agenda: schedule.getEvents()}
+    data: {pastEvents: schedule.pastEvents(),
+           nextEvent: schedule.nextEvent(),
+           futureEvents: schedule.futureEvents(),
+           eventCount: schedule.allEvents().length}
 });
 
 function refreshEvent() {
-    reactive.set({event: schedule.nextEvent(), agenda: schedule.getEvents()});
+    reactive.set({pastEvents: schedule.pastEvents(),
+                  nextEvent: schedule.nextEvent(),
+                  futureEvents: schedule.futureEvents(),
+                  eventCount: schedule.allEvents().length});
 }

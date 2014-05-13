@@ -18,7 +18,17 @@ function Schedule() {
         return _.first(this.upcomingEvents());
     }
 
-    this.getEvents = function() {
+    this.futureEvents = function() {
+        return this.upcomingEvents().splice(1);
+    }
+
+    this.pastEvents = function() {
+        return _.select(events, function(event) {
+            return event.startTime.isBefore(moment());
+        });
+    }
+
+    this.allEvents = function() {
         return events;
     }
 

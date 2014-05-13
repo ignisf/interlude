@@ -30,3 +30,15 @@ body,
     Background: none;
     box-shadow: none;
 }
+
+tr.past_event {
+    color: #6F6F6F;
+}
+
+tr.next_event {
+    color: #10AE00;
+}
+
+tr.future_event {
+    color: #BBBBBB;
+}

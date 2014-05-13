@@ -37,15 +37,35 @@
               <th>
                 Лекция
               </th>
+              <th>
+                Лектор
+              </th>
             </tr>
           </thead>
           <tbody>
-            {{#agenda}}
-            <tr>
+            {{#pastEvents}}
+            <tr class="past_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
+              <td>{{lecturer.name}}</td>
             </tr>
-            {{/agenda}}
+            {{/pastEvents}}
+
+            {{#nextEvent}}
+            <tr class="next_event">
+              <td>{{startTime.format('HH:mm')}}</td>
+              <td>{{title}}</td>
+              <td>{{lecturer.name}}</td>
+            </tr>
+            {{/nextEvent}}
+
+            {{#futureEvents}}
+            <tr class="future_event">
+              <td>{{startTime.format('HH:mm')}}</td>
+              <td>{{title}}</td>
+              <td>{{lecturer.name}}</td>
+            </tr>
+            {{/futureEvents}}
           </tbody>
         </table>
       </section>
@@ -54,17 +74,17 @@
     <script id="next_lecture_template" type="text/reactive">
       <section id="next-lecture">
         <h3>Следва</h3>
-        <h1>{{event.title}}</h1>
-        <p>{{event.description}}</p>
-        <h4>({{event.startTime.fromNow()}})</h4>
+        <h1>{{nextEvent.title}}</h1>
+        <p>{{nextEvent.description}}</p>
+        <h4>({{nextEvent.startTime.fromNow()}})</h4>
       </section>
     </script>
 
     <script id="next_lecturer_template" type="text/reactive">
       <section id="next-lecturer">
         <h3>Лектор</h3>
-        <h1>{{event.lecturer.name}}</h1>
-        <p>{{event.lecturer.description}}</p>
+        <h1>{{nextEvent.lecturer.name}}</h1>
+        <p>{{nextEvent.lecturer.description}}</p>
       </section>
     </script>
 
@@ -73,17 +93,17 @@
         <img src="logo.svg">
       </section>
 
-      {{#agenda.length}}
+      {{#eventCount}}
         {{> agenda_template}}
-      {{/agenda.length}}
+      {{/eventCount}}
 
-      {{#event}}
+      {{#nextEvent}}
         {{> next_lecture_template}}
-      {{/event}}
+      {{/nextEvent}}
 
-      {{#event.lecturer}}
+      {{#nextEvent.lecturer}}
         {{> next_lecturer_template}}
-      {{/event.lecturer}}
+      {{/nextEvent.lecturer}}
 
       <section>
         <h1>#PlovdivConf</h1>
