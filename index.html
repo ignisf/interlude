@@ -47,7 +47,7 @@
             <tr class="past_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{lecturer.name}}</td>
+              <td>{{speaker.name}}</td>
             </tr>
             {{/pastEvents}}
 
@@ -55,7 +55,7 @@
             <tr class="next_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{lecturer.name}}</td>
+              <td>{{speaker.name}}</td>
             </tr>
             {{/nextEvent}}
 
@@ -63,7 +63,7 @@
             <tr class="future_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{lecturer.name}}</td>
+              <td>{{speaker.name}}</td>
             </tr>
             {{/futureEvents}}
           </tbody>
@@ -71,8 +71,8 @@
       </section>
     </script>
 
-    <script id="next_lecture_template" type="text/reactive">
-      <section id="next-lecture">
+    <script id="next_talk_template" type="text/reactive">
+      <section id="next_talk">
         <h3>Следва</h3>
         <h1>{{nextEvent.title}}</h1>
         <p>{{nextEvent.description}}</p>
@@ -80,11 +80,11 @@
       </section>
     </script>
 
-    <script id="next_lecturer_template" type="text/reactive">
-      <section id="next-lecturer">
+    <script id="next_speaker_template" type="text/reactive">
+      <section id="next_speaker">
         <h3>Лектор</h3>
-        <h1>{{nextEvent.lecturer.name}}</h1>
-        <p>{{nextEvent.lecturer.description}}</p>
+        <h1>{{nextEvent.speaker.name}}</h1>
+        <p>{{nextEvent.speaker.description}}</p>
       </section>
     </script>
 
@@ -98,12 +98,12 @@
           {{> agenda_template}}
 
           {{#nextEvent}}
-            {{> next_lecture_template}}
+            {{> next_talk_template}}
           {{/nextEvent}}
 
-          {{#nextEvent.lecturer}}
-            {{> next_lecturer_template}}
-          {{/nextEvent.lecturer}}
+          {{#nextEvent.speaker}}
+            {{> next_speaker_template}}
+          {{/nextEvent.speaker}}
         </section>
       {{/eventCount}}
 
