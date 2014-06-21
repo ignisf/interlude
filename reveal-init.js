@@ -63,7 +63,16 @@ Reveal.initialize({
     backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
 
     // Number of slides away from the current that are visible
-    viewDistance: 3
+    viewDistance: 3,
+
+    width: 900,
+    height: 600,
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 8.0
 });
 
 Reveal.addEventListener('update-safe', function() {
