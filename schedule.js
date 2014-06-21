@@ -19,13 +19,13 @@ function Schedule() {
     }
 
     this.currentEvent = function() {
+        var latestEvent = _.last(this.pastEvents());
         var nextEvent = this.nextEvent();
-
-        return _.last(
-            _.select(this.pastEvents(), function(event) {
-                return event.startTime.isAfter(nextEvent.startTime.subtract('20', 'minutes'));
-            })
-        );
+        if (typeof nextEvent != 'undefined' && nextEvent.startTime.subtract('10', 'minutes').isAfter(moment())) {
+            return latestEvent;
+        } else {
+            return undefined;
+        }
     }
 
     this.futureEvents = function() {
