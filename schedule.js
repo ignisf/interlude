@@ -80,17 +80,17 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
+    title: 'Обяд',
+    startTime: moment({hour: 12, minute: 00})
+});
+
+schedule.addEvent({
     title: 'Разработка на хибридни мобилни приложения',
-    startTime: moment({hour: 11, minute: 50}),
+    startTime: moment({hour: 12, minute: 50}),
     speaker: {
         name: 'Георги Георгиев',
         description: 'Ръководител офис Бургас на ТехноЛогика ЕАД, с над 8 години професионален опит в проектиране, разработка и внедряване на информационни системи с .NET, Web Forms, Windows Forms, WPF, WCF технологии, както и Data Warehouse системи с Oracle RDBMS технологии, APEX, Warehouse Builder, Data Integrator. Напоследък с особен фокус върху мобилните платформи и хибридните решения. Преподавател по различни курсове на Oracle, системен анализ с UML и управление на изисквания в учебния център на ТехноЛогика.'
     }
-});
-
-schedule.addEvent({
-    title: 'Обяд',
-    startTime: moment({hour: 12, minute: 30})
 });
 
 schedule.addEvent({
