@@ -18,6 +18,16 @@ function Schedule() {
         return _.first(this.upcomingEvents());
     }
 
+    this.currentEvent = function() {
+        var nextEvent = this.nextEvent();
+
+        return _.last(
+            _.select(this.pastEvents(), function(event) {
+                return event.startTime.isAfter(nextEvent.startTime.subtract('20', 'minutes'));
+            })
+        );
+    }
+
     this.futureEvents = function() {
         return this.upcomingEvents().splice(1);
     }

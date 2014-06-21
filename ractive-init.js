@@ -8,6 +8,7 @@ var reactive = new Ractive({
 
     // Here, we're passing in some initial data
     data: {pastEvents: schedule.pastEvents(),
+           currentEvent: schedule.currentEvent(),
            nextEvent: schedule.nextEvent(),
            futureEvents: schedule.futureEvents(),
            eventCount: schedule.allEvents().length}
@@ -15,6 +16,7 @@ var reactive = new Ractive({
 
 function refreshEvent() {
     reactive.set({pastEvents: schedule.pastEvents(),
+                  currentEvent: schedule.currentEvent(),
                   nextEvent: schedule.nextEvent(),
                   futureEvents: schedule.futureEvents(),
                   eventCount: schedule.allEvents().length});
