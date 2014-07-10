@@ -34,7 +34,11 @@
             <tr class="past_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{speaker.name}}</td>
+              <td>
+                {{#speakers}}
+                  {{name}}
+                {{/speakers}}
+              </td>
             </tr>
             {{/pastEvents}}
 
@@ -42,7 +46,11 @@
             <tr class="next_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{speaker.name}}</td>
+              <td>
+                {{#speakers}}
+                  {{name}}
+                {{/speakers}}
+              </td>
             </tr>
             {{/nextEvent}}
 
@@ -50,7 +58,11 @@
             <tr class="future_event">
               <td>{{startTime.format('HH:mm')}}</td>
               <td>{{title}}</td>
-              <td>{{speaker.name}}</td>
+              <td>
+                {{#speakers}}
+                  {{name}}
+                {{/speakers}}
+              </td>
             </tr>
             {{/futureEvents}}
           </tbody>
@@ -66,11 +78,11 @@
       </section>
     </script>
 
-    <script id="current_speaker_template" type="text/ractive">
-      <section id="current_speaker">
+    <script id="speaker_template" type="text/ractive">
+      <section>
         <h3>Лектор</h3>
-        <h1>{{currentEvent.speaker.name}}</h1>
-        <p>{{currentEvent.speaker.description}}</p>
+        <h1>{{name}}</h1>
+        <p>{{description}}</p>
       </section>
     </script>
 
@@ -80,14 +92,6 @@
         <h1>{{nextEvent.title}}</h1>
         <p>{{nextEvent.description}}</p>
         <h4>({{nextEvent.startTime.fromNow()}})</h4>
-      </section>
-    </script>
-
-    <script id="next_speaker_template" type="text/ractive">
-      <section id="next_speaker">
-        <h3>Лектор</h3>
-        <h1>{{nextEvent.speaker.name}}</h1>
-        <p>{{nextEvent.speaker.description}}</p>
       </section>
     </script>
 
@@ -104,17 +108,17 @@
             {{> current_talk_template}}
           {{/currentEvent}}
 
-          {{#currentEvent.speaker}}
-            {{> current_speaker_template}}
-          {{/currentEvent.speaker}}
+          {{#currentEvent.speakers}}
+            {{> speaker_template}}
+          {{/currentEvent.speakers}}
 
           {{#nextEvent}}
             {{> next_talk_template}}
           {{/nextEvent}}
 
-          {{#nextEvent.speaker}}
-            {{> next_speaker_template}}
-          {{/nextEvent.speaker}}
+          {{#nextEvent.speakers}}
+            {{> speaker_template}}
+          {{/nextEvent.speakers}}
         </section>
       {{/eventCount}}
 
