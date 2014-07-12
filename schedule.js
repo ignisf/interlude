@@ -85,7 +85,7 @@ schedule.addEvent({
 
 schedule.addEvent({
     title: 'iOS Development - Tips & Tricks',
-    startTime: moment({hour: 12}),
+    startTime: moment({hour: 12, minute: 10}),
     speakers: [
         {
             name: 'Галин Кърджилов',
