@@ -13,6 +13,7 @@ body,
 .reveal h5,
 .reveal h6 {
     font-family: "Roboto Condensed", tahoma, verdana, arial, sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 .reveal section img {
