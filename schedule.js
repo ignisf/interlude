@@ -73,7 +73,7 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'Lunch',
+    title: 'Lunch 🍔',
     startTime: moment({hour: 12, minute: 20})
 });
 
@@ -132,6 +132,6 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'Official conference dinner‎',
+    title: 'Official conference dinner 🍸‎',
     startTime: moment({hour: 19, minute: 00})
 });
