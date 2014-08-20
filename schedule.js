@@ -116,7 +116,7 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'Lightning Talks',
+    title: 'Lightning Talks ⚡',
     startTime: moment({hour: 16, minute: 10}),
 });
 
