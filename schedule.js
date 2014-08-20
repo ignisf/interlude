@@ -21,7 +21,7 @@ function Schedule() {
     this.currentEvent = function() {
         var latestEvent = _.last(this.pastEvents());
         var nextEvent = this.nextEvent();
-        if (typeof nextEvent != 'undefined' && (latestEvent.displayNext || moment(nextEvent.startTime).subtract('minutes', 10).isAfter(moment()))) {
+        if (typeof nextEvent != 'undefined' && moment(nextEvent.startTime).subtract('minutes', 10).isAfter(moment())) {
             return latestEvent;
         } else {
             return undefined;
