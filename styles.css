@@ -15,14 +15,6 @@ body,
     font-family: "Roboto Condensed", tahoma, verdana, arial, sans-serif;
 }
 
-#background_video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10000;
-    opacity: 0.4;
-}
-
 .reveal section img {
     border: none;
     Background: none;

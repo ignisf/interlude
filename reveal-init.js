@@ -72,7 +72,10 @@ Reveal.initialize({
 
     // Bounds for smallest/largest possible scale to apply to content
     minScale: 0.2,
-    maxScale: 8.0
+    maxScale: 8.0,
+
+    parallaxBackgroundImage: 'yapc.png',
+    parallaxBackgroundSize: '1920px 1080px'
 });
 
 Reveal.addEventListener('update-safe', function() {

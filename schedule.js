@@ -52,112 +52,86 @@ function Schedule() {
 var schedule = new Schedule();
 
 schedule.addEvent({
-    title: 'Кафе',
+    title: 'Registration and Attendees Meet and Greet',
     startTime: moment({hour: 9, minute: 30})
 });
 
 schedule.addEvent({
-    title: 'Откриване',
-    startTime: moment({hour: 9, minute: 50})
+    title: 'Welcome to YAPC',
+    startTime: moment({hour: 11})
 });
 
 schedule.addEvent({
-    title: 'Node.js and Open Source Software Development on Microsoft Azure',
-    startTime: moment({hour: 10}),
+    title: 'How The Camel Is De-Cocooning‎',
+    startTime: moment({hour: 11, minute: 30}),
     speakers: [
         {
-            name: 'Михаил Матеев',
-            description: 'Михаил е разработчик в Infragistics. Работил е в различни области, свързани с технологии на Microsoft, като Silverlight, WPF, Windows Phone, Visual Studio LightSwitch, Windows Store приложения, WCF RIA Services, MS SQL Server и Microsoft Azure. През последните десет години, Михаил е писал статии за Computer World и различни блогове за .NET технологии. Той е сътрудник и технически редактор на PACKT Publishing and Wiley. Повече от пет години е работил в ESRI България. Няколко години Михаил е бил лектор в ФМИ на Софийския университет "Св. за Климент Охридски ". Също така е и преподавател по компютърни системи в Университет по Архитектура, Строителство и Геодезия в София.'
+            name: 'liz',
+            description: 'Made some interesting modules, to be found at CPAN. Co-organiser YAPC::Europe::2001 in Amsterdam. Chairman of YAPC::Europe::Foundation (YEF)'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Редизайн на „държавата“ и препрограмиране на „системата“',
-    startTime: moment({hour: 11, minute: 10}),
+    title: 'Lunch',
+    startTime: moment({hour: 12, minute: 20})
+});
+
+schedule.addEvent({
+    title: '‎Code I\'m proud of‎',
+    startTime: moment({hour: 13, minute: 20}),
     speakers: [
         {
-            name: 'Антон Стойчев',
-            description: 'Антон е прекарал последните 2 години във Великобритания, работейки като разработчик, предимно на саморегулиращи се системи за извличане и анализ на данни, достигащи на размер стотици сървъри на AWS. Сега е тук и иска да добави смисъл и желание за неизбежния, целодневен престой пред монитор; Чрез “Civic Hacking” – нещо започващо с работещите в дигиталната сфера, но обхващащо всички други. Живее живота си майсторейки и обичайки, в опити за рисуване, писане, четене и прекарвайки часове в сглобяване на извинения за честите си пътувания.'
+            name: 'Thomas Klausner (‎domm‎)',
+            description: 'Currently full-time father of 2 kids, half-time Perl hacker, sort-of DJ, bicyclist, no longer dreadlocked and more than 34 years old but too lazy to update his profile once a year.'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'iOS Development - Tips & Tricks',
-    startTime: moment({hour: 12, minute: 10}),
+    title: 'How to Fake a Database Design‎',
+    startTime: moment({hour: 13, minute: 50}),
     speakers: [
         {
-            name: 'Галин Кърджилов',
-            description: 'Галин е проактивен и творчески настроен софтуерен инженер с повече от 10 години опит. В момента е посветен на мобилните разработки и работи като Senior iOS Developer в MentorMate София. Неговият стремеж е да генерира максимално въздействие към потребителите.'
-        },
-        {
-            name: 'Стефан Цвятков',
-            description: 'Стефан е започнал кариерата си като разработчик за Mac. През 2008 г. Apple пуска iOS SDK и това е началото на една ера. Оттогава, той работи по създаването iOS приложения. В MentorMate той успява да изгради най-големия екип от iOS програмисти в България. Стефан е известен с желанието си да подобри мобилните приложения, за да бъдат по-интерактивни, ефективни и оптимизирани за нуждите на бизнеса.'
+            name: 'Curtis Poe (‎Ovid‎)',
+            description: 'Freelance Perl guru for hire. Perl Foundation Board Committee member. Former Perl Foundation Grant Committee chair. Testing zealot. Professional expat. Beer lover.'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Обяд',
-    startTime: moment({hour: 12, minute: 40})
-});
-
-schedule.addEvent({
-    title: 'The Cloud Beyond the Buzzword',
-    startTime: moment({hour: 13, minute: 30}),
+    title: 'Rakudo Perl 6 and MoarVM Performance Advances‎',
+    startTime: moment({hour: 14, minute: 50}),
     speakers: [
         {
-            name: 'Божидар Божанов',
-            description: 'Божидар Божанов е програмист, а понякога и архитект. От скука е направил http://computoser.com - компютърен композитор, а друго негово хоби е лингвистиката. Притежател на "дебел" stackoverflow профил.'
+            name: 'Jonathan Worthington (‎jnthn‎)',
+            description: 'In the Perl world, Jonathan is best known as one of the key developers of the Rakudo Perl 6 compiler. His work has focused on the object model, type system, multiple dispatch and signatures. He\'s a regular speaker in the European Perl Conference and Workshop scene, and finds any invite to come and speak and enjoy a few beers with the local Perl hackers hard to resist.'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Мета-програмиране с Nimrod',
-    startTime: moment({hour: 14, minute: 20}),
-    speakers: [
-        {
-            name: 'Захари Караджов',
-            description: 'Захари е C++ ветеран от гейм-индустрията, а понастоящем технически директор в Даркиум Студио, където с помощта на кофейн и CoffeeScript се разработва нов социално ориентиран уеб браузър. Твърдо убеден е, че използваните в момента езици за програмиране ще бъдат изместени от нови по-бързи, по-мощни и по-красиви такива и от нетърпение сам се е захванал да допринесе за това, участвайки в разработката на Nimrod.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'File editing on the client side (Javascript)',
-    startTime: moment({hour: 15, minute: 10}),
-    speakers: [
-        {
-            name: 'Росен Колев',
-            description: 'Росен работи като софтуерен разработчик повече от 5 години. В моментът е Senior .NET Developer в MentorMate Варна. Пише главно на .NET, C#, JavaScript и от време на време Objective-C. Обича добре подредед код и мрази лошата архитектура.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Кафе пауза ☕',
-    startTime: moment({hour: 15, minute: 50})
-});
-
-schedule.addEvent({
-    title: 'Екстремно програмиране',
-    startTime: moment({hour: 16, minute: 10}),
-    speakers: [
-        {
-            name: 'Стефан Кънев',
-            description: 'Стефан се занимава с програмиране откакто се помни. Сред любимите му неща са Ruby, Vim, автоматизирани тестове, папийонки, Apple продуктите и всевъзможни екзотични езици за програмиране. В заетото си време програмира на Rails, а в свободното - води един-два курса във ФМИ към СУ, пише много код, който после трие и се опитва да не се нарани с планинското си колело. Никак не обича PHP и е амбивалентен към Java.'
-        }
-    ]
+    title: 'Coffee Break ☕',
+    startTime: moment({hour: 15, minute: 40})
 });
 
 schedule.addEvent({
     title: 'Lightning Talks',
-    startTime: moment({hour: 17, minute: 00})
+    startTime: moment({hour: 16, minute: 10}),
 });
 
 schedule.addEvent({
-    title: 'Закриване',
-    startTime: moment({hour: 18, minute: 00})
+    title: '‎Day 1 Keynote - You\'re Killing Managers (Keep It Up)‎',
+    startTime: moment({hour: 17, minute: 10}),
+    speakers: [
+        {
+            name: 'Curtis Poe (‎Ovid‎)',
+            description: 'Freelance Perl guru for hire. Perl Foundation Board Committee member. Former Perl Foundation Grant Committee chair. Testing zealot. Professional expat. Beer lover.'
+        }
+    ]
+});
+
+schedule.addEvent({
+    title: 'Official conference dinner‎',
+    startTime: moment({hour: 19, minute: 00})
 });
