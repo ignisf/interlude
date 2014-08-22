@@ -64,7 +64,7 @@ schedule.addEvent({
 
 schedule.addEvent({
     title: 'Translation with context',
-    startTime: moment({hour: 12, minute: 30}),
+    startTime: moment({hour: 12, minute: 00}),
     speakers: [
         {
             name: 'Mark Overmeer (‎markov‎)',
