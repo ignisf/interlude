@@ -62,12 +62,12 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'How The Camel Is De-Cocooning‎',
+    title: 'Perl 6 in context‎',
     startTime: moment({hour: 11, minute: 30}),
     speakers: [
         {
-            name: 'liz',
-            description: 'Made some interesting modules, to be found at CPAN. Co-organiser YAPC::Europe::2001 in Amsterdam. Chairman of YAPC::Europe::Foundation (YEF)'
+            name: 'Herbert Breunung (‎lichtkind‎)',
+            description: ' Perl Artist since 2003. Main project: Kephra, Perl 6 Tablets. Main Interests: Wisdom, also Gui programming with Wx and Perl 6.'
         }
     ]
 });
