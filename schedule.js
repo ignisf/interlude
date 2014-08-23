@@ -52,22 +52,34 @@ function Schedule() {
 var schedule = new Schedule();
 
 schedule.addEvent({
-    title: 'Registration and Attendees Meet and Greet',
-    startTime: moment({hour: 9, minute: 30})
+    title: 'Regex 101',
+    startTime: moment({hour: 10, minute: 00}),
+    speakers: [
+        {
+            name: 'Bradley Andersen (‎elohmrow‎)',
+            description: 'Je n\'avais pas besoin de cette hypothese-la'
+        }
+    ]
 });
 
 schedule.addEvent({
-    title: 'Welcome to YAPC',
-    startTime: moment({hour: 11})
+    title: 'HTTP Clients and Perl‎',
+    startTime: moment({hour: 11}),
+    speakers: [
+        {
+            name: 'Tom Hukins',
+            description: ''
+        }
+    ]
 });
 
 schedule.addEvent({
-    title: 'Perl 6 in context‎',
+    title: 'Dancer and DBIx::Class‎',
     startTime: moment({hour: 11, minute: 30}),
     speakers: [
         {
-            name: 'Herbert Breunung (‎lichtkind‎)',
-            description: ' Perl Artist since 2003. Main project: Kephra, Perl 6 Tablets. Main Interests: Wisdom, also Gui programming with Wx and Perl 6.'
+            name: 'Stefan Hornburg (‎racke‎)',
+            description: 'Open source consultant since 1998, with the focus on E-Commerce, Perl and Debian. Started using Dancer in 2011 and is now part of the Dancer development team.'
         }
     ]
 });
@@ -78,40 +90,40 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: '‎Code I\'m proud of‎',
+    title: 'Reading the layercake, an introduction to PerlIO‎',
     startTime: moment({hour: 13, minute: 20}),
     speakers: [
         {
-            name: 'Thomas Klausner (‎domm‎)',
-            description: 'Currently full-time father of 2 kids, half-time Perl hacker, sort-of DJ, bicyclist, no longer dreadlocked and more than 34 years old but too lazy to update his profile once a year.'
+            name: 'Leon Timmermans (‎leont‎)',
+            description: 'He\'s a Dutch perl hacker, mainly known for File::Map, Module::Build::Tiny, libperl++ and threads::lite, as well as some contributions to core.'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'How to Fake a Database Design‎',
+    title: 'Devops Logique‎',
     startTime: moment({hour: 13, minute: 50}),
     speakers: [
         {
-            name: 'Curtis Poe (‎Ovid‎)',
-            description: 'Freelance Perl guru for hire. Perl Foundation Board Committee member. Former Perl Foundation Grant Committee chair. Testing zealot. Professional expat. Beer lover.'
+            name: 'Matt S Trout (‎mst‎)',
+            description: ''
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Rakudo Perl 6 and MoarVM Performance Advances‎',
+    title: 'Functional Pe(a)rls: Huey\'s Zipper‎',
     startTime: moment({hour: 14, minute: 50}),
     speakers: [
         {
-            name: 'Jonathan Worthington (‎jnthn‎)',
-            description: 'In the Perl world, Jonathan is best known as one of the key developers of the Rakudo Perl 6 compiler. His work has focused on the object model, type system, multiple dispatch and signatures. He\'s a regular speaker in the European Perl Conference and Workshop scene, and finds any invite to come and speak and enjoy a few beers with the local Perl hackers hard to resist.'
+            name: 'osfameron',
+            description: 'mySociety, DoES Liverpool (coworking/hackspace), co-author of Designing the Internet of Things'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Coffee Break ☕',
+    title: 'Coffee Break',
     startTime: moment({hour: 15, minute: 40})
 });
 
@@ -121,17 +133,12 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: '‎Day 1 Keynote - You\'re Killing Managers (Keep It Up)‎',
+    title: 'Day 2 Keynote - State of the Velociraptor‎',
     startTime: moment({hour: 17, minute: 10}),
     speakers: [
         {
-            name: 'Curtis Poe (‎Ovid‎)',
-            description: 'Freelance Perl guru for hire. Perl Foundation Board Committee member. Former Perl Foundation Grant Committee chair. Testing zealot. Professional expat. Beer lover.'
+            name: 'Matt S Trout (‎mst‎)',
+            description: ''
         }
     ]
-});
-
-schedule.addEvent({
-    title: 'Official conference dinner',
-    startTime: moment({hour: 19, minute: 00})
 });
