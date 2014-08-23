@@ -117,7 +117,7 @@ schedule.addEvent({
     speakers: [
         {
             name: 'Salve J. Nilsen (‎sjn‎)',
-            description: 'One of the original Oslo.pm\'ers who seems to end up organizing stuff more often than hacking. The fellow behind the first Perl QA Hackathon, two Nordic Perl Workshops in Oslo and one more hackathon for the EPO and Perl6 crowd, another Perl 6 hackathon in Oslo, and the 2012 "Moving to Moose" hackathon. Was leader of Oslo.pm during most of it\'s first ten years, and has since then learned to say "no" a little more often :). Currently spending most of his time playing with different projects and advocating the use of FLOS Software in the Norwegian public sector.'
+            description: 'One of the original Oslo.pm\'ers who seems to end up organizing stuff more often than hacking.'
         }
     ]
 });

@@ -52,11 +52,34 @@ function Schedule() {
 var schedule = new Schedule();
 
 schedule.addEvent({
-    title: 'Auditing and toughening as part of the Security Development Lifecycle‎',
+    title: '‎SyContent - Content in the Cloud with V8‎',
+    startTime: moment({hour: 10, minute: 00}),
+    speakers: [
+        {
+            name: 'Torsten Raudssus (‎Getty‎)',
+            description: ''
+        }
+    ]
+});
+
+
+schedule.addEvent({
+    title: '‎Docker with Perl - an Introduction‎ ',
+    startTime: moment({hour: 11, minute: 00}),
+    speakers: [
+        {
+            name: 'Denis Banovic (‎@bano99‎)',
+            description: ''
+        }
+    ]
+});
+
+schedule.addEvent({
+    title: 'Create your containers with perl‎',
     startTime: moment({hour: 11, minute: 30}),
     speakers: [
         {
-            name: 'John Lightsey',
+            name: 'Marian Marinov (‎HackMan‎)',
             description: ''
         }
     ]
@@ -68,56 +91,34 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'Geocoding the World (in Perl)‎',
+    title: '‎Automatization Network infrastructure‎',
     startTime: moment({hour: 13, minute: 20}),
     speakers: [
         {
-            name: 'Alex Balhatchet (‎Kaoru‎)',
-            description: 'CTO at Lokku Ltd. Their main brand is the property search engine Nestoria (http://www.nestoria.com/) which operates in nine countries. They\'ve made numerous contributions to CPAN, check them out: https://github.com/lokku. They also have a developer blog which you can read here: http://devblog.nestoria.com/'
+            name: 'Naim Shafiyev (‎shafiev‎)',
+            description: 'The student of MIREA. Interests: GCC, Linux kernel, OpenBSD, PERL, Parrot, Catalyst, Search engines'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Adventures in civic hacking - FixMyStreet\'s Open311 support‎',
+    title: 'Building an AWS SDK for Perl‎',
     startTime: moment({hour: 13, minute: 50}),
     speakers: [
         {
-            name: 'osfameron',
-            description: 'mySociety, DoES Liverpool (coworking/hackspace), co-author of Designing the Internet of Things'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'A geo search engine in a few lines of perl‎',
-    startTime: moment({hour: 14, minute: 20}),
-    speakers: [
-        {
-            name: 'Ervin Ruci (‎eruci‎)',
+            name: 'Jose Luis Martinez Torres',
             description: ''
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Running Slovenian national video and audio archive on Perl Dancer.‎',
+    title: 'Perl in the Cloud - Update‎',
     startTime: moment({hour: 14, minute: 50}),
     speakers: [
         {
-            name: 'Simun Kodzoman',
-            description: ''
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Perl in Automotive Logistics‎',
-    startTime: moment({hour: 15, minute: 20}),
-    speakers: [
-        {
-            name: 'Luboš Kolouch (‎kolcon‎)',
-            description: 'He\'s an IT Manager who loves to find balance between technical, people and commercial aspects of projects. He like IT Security, Linux and coding in Perl.'
+            name: 'Denis Banovic (‎@bano99‎)',
+            description: 'Denis Banovic has over 13 years of experience as a senior software developer, system administrator and team leader. Currently he is busy creating and implementing Cloud Applications for the tourism industry in Austria. In his spare time, Denis\' interests include rockets, photography, traveling and psychology.'
         }
     ]
 });
@@ -125,9 +126,4 @@ schedule.addEvent({
 schedule.addEvent({
     title: 'Coffee Break ☕',
     startTime: moment({hour: 15, minute: 40})
-});
-
-schedule.addEvent({
-    title: 'Official conference dinner 🍸‎',
-    startTime: moment({hour: 19, minute: 00})
 });
