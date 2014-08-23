@@ -52,23 +52,45 @@ function Schedule() {
 var schedule = new Schedule();
 
 schedule.addEvent({
-    title: 'Perl Secret‎',
-    startTime: moment({hour: 11, minute: 30}),
+    title: 'Using Perl for autogeneration physical formulas',
+    startTime: moment({hour: 10, minute: 00}),
     speakers: [
         {
-            name: 'Mihai Pop',
+            name: 'Ignat Ignatov',
             description: ''
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Translation with context',
-    startTime: moment({hour: 12, minute: 00}),
+    title: 'SQL::Abstract::FromQuery',
+    startTime: moment({hour: 10, minute: 30}),
     speakers: [
         {
-            name: 'Mark Overmeer (‎markov‎)',
-            description: 'Perl, Perl and UNIX'
+            name: 'Laurent Dami (‎dami‎)',
+            description: ''
+        }
+    ]
+});
+
+schedule.addEvent({
+    title: '‎Extreme (Elastic)Search‎',
+    startTime: moment({hour: 11, minute: 00}),
+    speakers: [
+        {
+            name: 'Borislav Nikolov (‎jackdoe‎)',
+            description: ''
+        }
+    ]
+});
+
+schedule.addEvent({
+    title: 'SQL for accountants: understanding the beast via SpreadSheets‎',
+    startTime: moment({hour: 11, minute: 30}),
+    speakers: [
+        {
+            name: 'Peter Rabbitson (‎ribasushi‎)',
+            description: ''
         }
     ]
 });
@@ -79,56 +101,34 @@ schedule.addEvent({
 });
 
 schedule.addEvent({
-    title: 'Some Dist::Zilla::Plugin:: best practices‎',
+    title: 'Recruitment in Perl - The State of the Perl Recruitment Market‎',
     startTime: moment({hour: 13, minute: 20}),
     speakers: [
         {
-            name: 'Olivier Mengué (‎dolmen‎)',
-            description: '15 years of Perl programming (6 years as a full time Perl developer). Worked as a professional Perl developer on a portable (various Unix, Linux, Windows) daemon application built with POE. Currently working with Perl in an embedded environment for home automation with AnyEvent, Dist::Zilla...'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Video and audio with Perl and DLNA (and Chromecast)‎',
-    startTime: moment({hour: 13, minute: 50}),
-    speakers: [
-        {
-            name: 'Max Maischein (‎Corion‎)',
+            name: 'Rick Deller',
             description: ''
         }
     ]
 });
 
 schedule.addEvent({
-    title: '‎Home Automation With Perl‎',
-    startTime: moment({hour: 14, minute: 20}),
+    title: 'Creative Perlmongership‎',
+    startTime: moment({hour: 13, minute: 50}),
     speakers: [
         {
-            name: 'Maroš Kollár (‎maros‎)',
-            description: ' Perl aficionado since 1998 and one of the YAPC::EU 2007 organizers.'
+            name: 'Salve J. Nilsen (‎sjn‎)',
+            description: 'One of the original Oslo.pm\'ers who seems to end up organizing stuff more often than hacking. The fellow behind the first Perl QA Hackathon, two Nordic Perl Workshops in Oslo and one more hackathon for the EPO and Perl6 crowd, another Perl 6 hackathon in Oslo, and the 2012 "Moving to Moose" hackathon. Was leader of Oslo.pm during most of it\'s first ten years, and has since then learned to say "no" a little more often :). Currently spending most of his time playing with different projects and advocating the use of FLOS Software in the Norwegian public sector.'
         }
     ]
 });
 
 schedule.addEvent({
-    title: 'Open source deep sky images using perl‎',
+    title: 'CSV made easier for end-users‎',
     startTime: moment({hour: 14, minute: 50}),
     speakers: [
         {
-            name: 'StrayTaoist',
-            description: 'Rarely seen in public, and even then only from behind. Willing to tell you how and why you are wrong.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Get Me to the Pub Please‎',
-    startTime: moment({hour: 15, minute: 20}),
-    speakers: [
-        {
-            name: 'Sue Spence (‎virtualsue‎)',
-            description: ' Perl programmer, currently working at UK2 in London.'
+            name: 'H.Merijn Brand (‎Tux‎)',
+            description: 'Using mainly open source utilities and C to exchange data between sources, porting open source to commercial OSes and support the Open Source community as widely as possible. perl5 Configure pumpking and CSV wizard.'
         }
     ]
 });
@@ -136,9 +136,4 @@ schedule.addEvent({
 schedule.addEvent({
     title: 'Coffee Break ☕',
     startTime: moment({hour: 15, minute: 40})
-});
-
-schedule.addEvent({
-    title: 'Official conference dinner 🍸‎',
-    startTime: moment({hour: 19, minute: 00})
 });
