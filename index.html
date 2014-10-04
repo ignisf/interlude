@@ -24,8 +24,6 @@
       </div>
     </div>
 
-    <video id="background_video" src="background.mp4" loop autoplay />
-
     <script id="agenda_template" type="text/ractive">
       <section id="agenda">
         <table class="reveal">
@@ -96,42 +94,51 @@
     </script>
 
     <script id="slides_template" type="text/ractive">
-      <section data-state="update-safe">
-        <img src="logo.png">
+      <section>
+        <img src="logos/BSDeurope.png"/>
+      </section>
+      <section>
+        <img src="logos/egt.png"/>
+      </section>
+      <section>
+        <img src="logos/elwix_big_logo.png"/>
+      </section>
+      <section>
+        <img src="logos/en-logo-redesign-wordmark-v1.0-rgb-01.png"/>
+      </section>
+      <section>
+        <img src="logos/getclouder.png"/>
+      </section>
+      <section>
+        <img src="logos/iXlogo-transparent-2000px.png"/>
+      </section>
+      <section>
+        <img src="logos/largeNewGoogleLogoFinalFlat-a.png"/>
+      </section>
+      <section>
+        <img src="logos/logo_bulstream.png"/>
+      </section>
+      <section>
+        <img src="logos/Madison-Gurkha-logo.jpg"/>
+      </section>
+      <section>
+        <img src="logos/netbsd.png"/>
+      </section>
+      <section>
+        <img src="logos/pc-engines-logo.gif"/>
+      </section>
+      <section>
+        <img src="logos/TheFreeBSDFoundation_Logo_HighRes.png"/>
+      </section>
+      <section>
+        <img src="logos/threema-logo_schwarz_mit_claim.png"/>
+      </section>
+      <section>
+        <img src="logos/trivago-logo.png"/>
       </section>
 
-      {{#eventCount}}
-        <section>
-          {{> agenda_template}}
-
-          {{#currentEvent}}
-            {{> current_talk_template}}
-          {{/currentEvent}}
-
-          {{#currentEvent.speakers}}
-            {{> speaker_template}}
-          {{/currentEvent.speakers}}
-
-          {{#nextEvent}}
-            {{> next_talk_template}}
-          {{/nextEvent}}
-
-          {{#nextEvent.speakers}}
-            {{> speaker_template}}
-          {{/nextEvent.speakers}}
-        </section>
-      {{/eventCount}}
-
-      <!-- <section> -->
-      <!--   <h1>Обратна връзка</h1> -->
-      <!--   <h2>http://bit.ly/burgasconf-2014-feedback</h2> -->
-      <!-- </section> -->
-
       <section>
-        <h1>#VarnaConf</h1>
-        <h2>В Twitter и IRC на irc.it-tour.bg</h2>
-        <!-- <a class="twitter-timeline"  href="https://twitter.com/search?q=%23BurgasConf"  data-widget-id="466029214940925952">Tweets about "#BurgasConf"</a> -->
-        <!-- <script src="https://platform.twitter.com/widgets.js" id="twitter-wjs"></script> -->
+        <img src="logos/arm.png"/>
       </section>
     </script>
 
