@@ -12,13 +12,6 @@ function Schedule(hallId) {
         });
     }
 
-    this.addEvent = function(event) {
-        events.push(event);
-        events = _.sortBy(events, function(event) {
-            return event.startTime.unix()
-        });
-    }
-
     this.upcomingEvents = function() {
         return _.select(events, function(event) {
             return event.startTime.isAfter(moment());
@@ -31,8 +24,7 @@ function Schedule(hallId) {
 
     this.currentEvent = function() {
         var latestEvent = _.last(this.pastEvents());
-        var nextEvent = this.nextEvent();
-        if (typeof nextEvent != 'undefined' && moment(nextEvent.startTime).subtract('minutes', 10).isAfter(moment())) {
+        if (typeof(latestEvent) != 'undefined' && latestEvent.endTime.isAfter(moment())) {
             return latestEvent;
         } else {
             return undefined;
@@ -51,12 +43,6 @@ function Schedule(hallId) {
 
     this.allEvents = function() {
         return events;
-    }
-
-    this.addDelay = function(time) {
-        _.each(this.upcomingEvents(), function(event, index, agenda) {
-            event.startTime.add(time);
-        });
     }
 }
 
