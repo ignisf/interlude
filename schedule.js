@@ -71,4 +71,3 @@ $.urlParam = function(name){
 }
 
 var schedule = new Schedule(parseInt($.urlParam('roomId')));
-schedule.update();
