@@ -42,7 +42,7 @@ Reveal.initialize({
     autoSlide: 10000,
 
     // Stop auto-sliding after user input
-    autoSlideStoppable: true,
+    autoSlideStoppable: false,
 
     // Enable slide navigation via mouse wheel
     mouseWheel: false,
@@ -74,7 +74,7 @@ Reveal.initialize({
     minScale: 0.2,
     maxScale: 8.0,
 
-    parallaxBackgroundImage: 'yapc.png',
+    parallaxBackgroundImage: 'openfest.png',
     parallaxBackgroundSize: '1920px 1080px'
 });
 
