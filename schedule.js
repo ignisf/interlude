@@ -1,5 +1,16 @@
-function Schedule() {
+function Schedule(hallId) {
     var events = [];
+
+    this.update = function() {
+        $.getJSON("https://cfp.openfest.org/schedule.json", function(data) {
+            var scheduleEvents = $.map(data[hallId], function(event) {
+                event['startTime'] = moment(event['startTime']);
+                event['endTime'] = moment(event['endTime']);
+                return event;
+            });
+            events = scheduleEvents;
+        });
+    }
 
     this.addEvent = function(event) {
         events.push(event);
@@ -49,97 +60,15 @@ function Schedule() {
     }
 }
 
-var schedule = new Schedule();
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+}
 
-schedule.addEvent({
-    title: 'Behind the scenes of a grown-up web application‎',
-    startTime: moment({hour: 10, minute: 00}),
-    speakers: [
-        {
-            name: 'Kerstin Puschke (‎titanoboa‎)',
-            description: 'Kerstin Puschke is a software engineer living in Hamburg. As part of an awesome team, she contributes to the backend of XING, a social network for business professionals with about 14 million users.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'GOTO statement considered awesome‎',
-    startTime: moment({hour: 10, minute: 30}),
-    speakers: [
-        {
-            name: 'Carl Mäsak (‎masak‎)',
-            description: 'Has been programming Perl since 2001. Found Perl 6 somewhere around 2004, and fell in love. Now doing a number of projects in Perl 5 and 6. A regular at #perl6, he often helps newcomers and does smallish tasks on the Perl 6 specs, test suite and on Rakudo and Niecza.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: '‎C-Day Is Coming‎',
-    startTime: moment({hour: 11}),
-    speakers: [
-        {
-            name: 'liz',
-            description:  'Made some interesting modules, to be found at CPAN. Co-organiser YAPC::Europe::2001 in Amsterdam. Chairman of YAPC::Europe::Foundation (YEF)'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Lunch',
-    startTime: moment({hour: 12, minute: 20})
-});
-
-schedule.addEvent({
-    title: 'Digest:SHA is broken‎',
-    startTime: moment({hour: 13, minute: 20}),
-    speakers: [
-        {
-            name: 'Mark Overmeer (‎markov‎)',
-            description: 'Perl, Perl and UNIX'
-        }
-    ]
-});
-
-
-schedule.addEvent({
-    title: 'Asynchronous Programming with Futures‎',
-    startTime: moment({hour: 13, minute: 50}),
-    speakers: [
-        {
-            name: 'Paul Evans (‎LeoNerd‎)',
-            description: ''
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Adventures in Perl 6 Asynchrony‎',
-    startTime: moment({hour: 14, minute: 50}),
-    speakers: [
-        {
-            name: 'Jonathan Worthington (‎jnthn‎)',
-            description: 'In the Perl world, Jonathan is best known as one of the key developers of the Rakudo Perl 6 compiler. His work has focused on the object model, type system, multiple dispatch and signatures. He\'s a regular speaker in the European Perl Conference and Workshop scene, and finds any invite to come and speak and enjoy a few beers with the local Perl hackers hard to resist.'
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Coffee Break',
-    startTime: moment({hour: 15, minute: 40})
-});
-
-schedule.addEvent({
-    title: '‎Day 3 Keynote - The Joy In What We Do‎',
-    startTime: moment({hour: 16, minute: 10}),
-    speakers: [
-        {
-            name: 'Sawyer X',
-            description: ''
-        }
-    ]
-});
-
-schedule.addEvent({
-    title: 'Lightning Talks',
-    startTime: moment({hour: 17, minute: 00}),
-});
+var schedule = new Schedule(parseInt($.urlParam('roomId')));
+schedule.update();
