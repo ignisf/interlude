@@ -4,8 +4,8 @@ function Schedule(hallId) {
     this.update = function() {
         $.getJSON("https://cfp.openfest.org/schedule.json", function(data) {
             var scheduleEvents = $.map(data[hallId], function(event) {
-                event['startTime'] = moment(event['startTime']);
-                event['endTime'] = moment(event['endTime']);
+                event['startTime'] = moment(event['startTime']).subtract(2, 'hours');
+                event['endTime'] = moment(event['endTime']).subtract(2, 'hours');
                 return event;
             });
             events = scheduleEvents;
