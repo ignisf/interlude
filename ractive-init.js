@@ -15,6 +15,7 @@ var reactive = new Ractive({
 });
 
 function refreshEvent() {
+    schedule.update();
     reactive.set({pastEvents: schedule.pastEvents(),
                   currentEvent: schedule.currentEvent(),
                   nextEvent: schedule.nextEvent(),
