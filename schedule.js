@@ -18,7 +18,6 @@ function Schedule(hallId) {
             });
 
             events = scheduleEvents;
-            console.log(events);
         });
     }
 
