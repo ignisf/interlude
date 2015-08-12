@@ -4,11 +4,21 @@ function Schedule(hallId) {
     this.update = function() {
         $.getJSON("http://varnaconf.com/schedules/2015.json", function(data) {
             var scheduleEvents = $.map(data[hallId], function(event) {
-                event['startTime'] = moment(event['startTime']).subtract(219910, 'seconds');
-                event['endTime'] = moment(event['startTime']).add(40, 'minutes');
+                event['startTime'] = moment(event['startTime']);
                 return event;
             });
+
+            $.each(scheduleEvents, function(index, event) {
+                var nextEvent = scheduleEvents[index + 1];
+                if (typeof(nextEvent) != 'undefined') {
+                    event['endTime'] = moment(nextEvent['startTime']).subtract(10, 'minutes');
+                } else {
+                    event['endTime'] = moment(event['startTime']).add(40, 'minutes');
+                }
+            });
+
             events = scheduleEvents;
+            console.log(events);
         });
     }
 
