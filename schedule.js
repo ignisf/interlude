@@ -1,20 +1,17 @@
-function Schedule(hallId) {
+function Schedule(hallId, date) {
     var events = [];
 
     this.update = function() {
-        $.getJSON("http://varnaconf.com/schedules/2015.json", function(data) {
+        $.getJSON('http://www.openfest.org/2016/wp-content/themes/initfest/schedule/interlude.php', function(data) {
             var scheduleEvents = $.map(data[hallId], function(event) {
-                event['startTime'] = moment(event['startTime']);
+                event['startTime'] = moment(event['starts_at'] * 1000);
+                event['endTime'] = moment(event['ends_at'] * 1000);
+				console.log(event['startTime'].date());
+				if (event['startTime'].date() !== date) {
+					return null;
+				}
+				
                 return event;
-            });
-
-            $.each(scheduleEvents, function(index, event) {
-                var nextEvent = scheduleEvents[index + 1];
-                if (typeof(nextEvent) != 'undefined') {
-                    event['endTime'] = moment(nextEvent['startTime']).subtract(10, 'minutes');
-                } else {
-                    event['endTime'] = moment(event['startTime']).add(40, 'minutes');
-                }
             });
 
             events = scheduleEvents;
@@ -65,4 +62,4 @@ $.urlParam = function(name){
     }
 }
 
-var schedule = new Schedule(parseInt($.urlParam('roomId')));
+var schedule = new Schedule(parseInt($.urlParam('roomId')), parseInt($.urlParam('date')));
