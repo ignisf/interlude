@@ -20,5 +20,7 @@ function refreshEvent() {
                   currentEvent: schedule.currentEvent(),
                   nextEvent: schedule.nextEvent(),
                   futureEvents: schedule.futureEvents(),
-                  eventCount: schedule.allEvents().length});
+                  eventCount: schedule.allEvents().length,
+                  now: schedule.now(),
+                  room: schedule.room()});
 }
