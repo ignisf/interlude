@@ -132,5 +132,11 @@
 
     <script type="text/javascript" src="ractive-init.js"></script>
     <script type="text/javascript" src="reveal-init.js"></script>
+    <script type="text/javascript">
+      //  use for green screen background
+      if ($.urlParam('background')) {
+          $('body').css('background-color', $.urlParam('background'));
+      }
+    </script>
   </body>
 </html>

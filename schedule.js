@@ -19,7 +19,6 @@ function Schedule(hallId, date, setPageTitle) {
         $.getJSON(apiEndpointPrefix + '/events.json', function(eventsData) {
             $.getJSON(apiEndpointPrefix + '/slots.json', function(slotsData) {
                 $.each(slotsData, function(slotId, slot) {
-                    console.info(slot);
                     $.extend(eventsData[slot['event_id'].toString()], slot);
                     $.extend(eventsData[slot['event_id'].toString()], {"slotId": slotId});
                 });
